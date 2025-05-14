@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Feedback Form</title>
+  <style>
+    h1 {
+      margin-left: 0px;
+    }
+    h3 {
+      margin-left: 20px;
+    }
+    a {
+      margin-right: 10px;
+      font-size: 12pt;
+    }
+    .container {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      margin: 20px;
+      flex-wrap: wrap;
+    }
+    form {
+      background-color: orange;
+      padding: 20px;
+      width: fit-content;
+    }
+    textarea {
+      background-color: lightgrey;
+    }
+    .submit-button {
+      background-color: yellow;
+    }
+    iframe {
+      border-radius: 12px;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<h3>
+  <a href="Index.html">Home</a>
+  <a href="Table.html">Table</a>
+  <a href="Form.html">Form</a>
+  <a href="About.html">About</a>
+  <a href="https://github.com/luisver182/CTI110/tree/53f2f7c1550c8fafa6674fd434642bd84e751f7b/phyton%20assignments" target="_blank">GitHub Portfolio</a>
+</h3>
+
+<h1>User Feedback Form</h1>
+
+<div class="container">
+  <form method="GET" action="https://example.org/">
+    <p>
+      <label for="first">First Name:<br></label>
+      <input type="text" name="first" id="first">
+    </p>
+    <p>
+      <label for="last">Last Name:<br></label>
+      <input type="text" name="last" id="last">
+    </p>
+    <p>
+      <label for="user">Are you a web developer:<br></label>
+      <select id="user" name="user">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+      </select>
+    </p>
+    <fieldset>
+      <legend>Overall, how was your experience using this website?</legend>
+      <div>
+        <input type="radio" name="rate" value="excellent" id="excellent">
+        <label for="excellent">Excellent</label>
+      </div>
+      <div>
+        <input type="radio" name="rate" value="good" id="good">
+        <label for="good">Good</label>
+      </div>
+      <div>
+        <input type="radio" name="rate" value="okay" id="okay">
+        <label for="okay">Okay</label>
+      </div>
+      <div>
+        <input type="radio" name="rate" value="poor" id="poor">
+        <label for="poor">Poor</label>
+      </div>
+    </fieldset>
+    <p>
+      <textarea name="feedback" rows="4" cols="40">Any questions or comments share here...</textarea>
+    </p>
+    <p>
+      <input type="submit" class="submit-button">
+      <input type="reset" class="submit-button">
+    </p>
+  </form>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/lgEXfCNAexw?si=97TDwPSpWzkNIkNj"
+    title="YouTube video player" frameborder="0"
+    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+  </iframe>
+</div>
+
+<p style="text-align: center;">Copyrights &copy;2025</p>
+
+</body>
+</html>
